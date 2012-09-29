@@ -1,0 +1,280 @@
+﻿/*
+body{
+
+	font:normal 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	letter-spacing:0;
+	text-shadow:0 1px 0 rgba(255,255,255,.8);
+	-webkit-font-smoothing: subpixel-antialiased;
+
+}
+
+
+#imgGalleryWrapper{
+height:500px;
+width: 900px;
+
+}
+
+
+#imgGalleryFrame{
+border: 1px solid #000;
+width:300px;
+height:300px;
+
+}
+
+
+#imgWrapper
+{
+position:relative;
+width:800px;
+height:400px;
+border:1px solid #000;
+background:#ffe;
+
+}
+
+#thumb1,#thumb2,#thumb3,#thumb4,#thumb5
+{
+background:#fee;
+overflow:hidden;
+height:120px;
+width:120px;
+margin-left:30px;
+
+}
+
+#thumb1
+{
+position:absolute;
+left:0px;
+top:0px;
+
+}
+
+#thumb2
+{
+position:absolute;
+left:140px;
+top:20px;
+
+}
+#thumb3
+{
+position:absolute;
+left:260px;
+top:20px;
+
+}
+#thumb4
+{
+position:absolute;
+left:400px;
+top:20px;
+
+}
+#thumb5
+{
+position:absolute;
+left:560px;
+top:20px;
+
+}
+
+
+*/
+	/**************************************IMAGE GALLERY***********************************************/
+
+
+
+		<style type="text/css">
+
+/*
+	Page style
+	ALL THIS CSS IS FOR THE SLIDER PLEASE DO NOT CHANGE ANYTHING HERE
+*/
+
+.content {
+	width: 100%;
+	padding:20px;
+}
+#container {
+	width:580px;
+	padding:0px;
+	margin:0 auto;
+	position:relative;
+	z-index:0;
+}
+
+#example {
+	width:600px;
+	height:350px;
+	position:relative;
+}
+
+#ribbon {
+	position:absolute;
+	top:-3px;
+	left:-15px;
+	z-index:500;
+}
+
+/*
+
+#frame {
+	position:absolute;
+	z-index:0;
+	width:739px;
+	height:341px;
+	top:-3px;
+	left:-80px;
+}
+
+	Slideshow
+	EACH SLIDE IS IN A DIV AND IF YOU WOULD LIKE TO RESIZE THE PLEASE EMAIL ME
+	zakeria@wedevelop.org
+	
+*/
+
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:570px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	HERE YOU CAN SET THE WIDTH OF EACH SLIDE.
+	AND YOU CAN SET THE WIDTH.
+*/
+
+.slides_container div.slide {
+	width:570px;
+	height:270px;
+	display:block;
+}
+
+
+/*
+	Next/prev buttons
+	
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+/*
+	Pagination
+	--THESE ARE THE LITTLE DOTS THAT SWITCH and indicate which slide we are using.
+	
+*/
+
+.pagination {
+	margin:50px auto 0;
+	width:150px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/*
+	Caption
+	--HERE WE ARE CONTROLLING HOW THE CAPTION ON TOP OF THE IMAGE WILL LOOK
+*/
+
+.caption {
+	z-index:500;
+	position:absolute;
+	bottom:-35px;
+	left:0;
+	height:30px;
+	padding:31px;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	width:540px;
+	font-size:0.5 em;
+	line-height:1.33;
+	color:#fff;
+	border-top:1px solid #000;
+	text-shadow:none;
+}
+
+/*
+	FOOTER
+	-- THIS IS THE MESSAGE THAT WILL BE DISPLAYED IN CASE IMAGES ARE DISABLED
+	
+*/
+
+#footer {
+	text-align:center;
+	width:580px;
+	margin-top:9px;
+	padding:4.5px 0 18px;
+	border-top:1px solid #dfdfdf;
+}
+
+#footer p {
+	margin:4.5px 0;
+	font-size:1.0em;
+}
+
+/*
+	Anchors
+	THIS IS FOR LINKS 
+*/
+
+åa:link,a:visited {
+	color:#599100;
+	text-decoration:none;
+}
+
+a:hover,a:active {
+	color:#599100;
+	text-decoration:underline;
+}
+	</style>

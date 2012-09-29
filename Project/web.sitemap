@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Public/Default.aspx"  title="Home" description="this is my homepage"  >
+    
+    <siteMapNode  url="~/Public/blog.aspx"  title="Blog" description="this is my blog"  ></siteMapNode>
+
+    <siteMapNode url="~/Public/Images.aspx"  title="Images" description="this is where I have images"  ></siteMapNode>
+
+    <siteMapNode url="~/Public/Video.aspx" title="Video"  description="video" ></siteMapNode>
+
+    <siteMapNode url="~/Public/About.aspx"  title="About" description="About"  ></siteMapNode>
+
+    <siteMapNode url="~/Public/CreateNewUser.aspx"  title="Register" description="register" ></siteMapNode>
+
+
+
+  </siteMapNode>
+</siteMap>

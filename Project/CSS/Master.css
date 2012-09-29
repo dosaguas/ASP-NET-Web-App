@@ -1,0 +1,77 @@
+﻿  
+#mnNavBar{
+  left: 36px;
+    margin: -76px auto;
+    top: 191px;
+}
+
+#mediaplayer_wrapper{
+margin:0px;
+padding:0px;
+left:0px;
+top:0px;
+}
+  body{
+
+    background:#e9e9e9;
+  }
+   #header{
+    background: none repeat scroll 0 0 #55AAFF;
+    height: 100px;
+     position: relative;
+    width: 100%;
+
+       }
+
+   #navbar  li {
+    border-top: 3px solid #0af;
+    border-right: 1px solid #000;
+    letter-spacing: 3px;
+   }
+   
+   #navbar{
+     padding: 78px 245px;
+     text-transform:capitalize;
+    font-variant: small-caps;
+     
+    }
+
+    #navbar {
+    padding: 75px 245px;
+    text-align: left;
+    text-transform: capitalize;
+     font-variant: small-caps;
+     font-size:1.5em; 
+}
+
+#LoginName1,#LoginStatus1{
+margin:0px;
+
+}
+#lgstatWrapper{
+  text-align: right;
+}
+
+#footer{
+
+width: 100%;
+height:150px;
+background:#05f;
+opacity:0.3;
+margin: 0;
+padding:0;
+
+}
+ 
+   /*
+   
+
+      // background-image: url("images/blog_bannerv2new.png");
+      // background-repeat: no-repeat;
+
+   #frame{
+    height:auto;
+    width:1050px;
+   }
+   */
+   

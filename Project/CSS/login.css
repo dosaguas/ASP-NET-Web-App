@@ -1,0 +1,43 @@
+﻿body {
+font:normal 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    letter-spacing:0;
+    text-shadow:0 1px 0 rgba(255,255,255,.8);
+    -webkit-font-smoothing: subpixel-antialiased;
+
+}
+
+
+//THIS IS THE STATUS INDICATOR
+#stat{
+    background:#f00;
+    padding:20px;
+    }
+    
+#loginbox
+{
+  
+    width:60%;
+    height:90%;
+    padding:60px 180px;
+    margin:40px ;
+    text-align: center;
+    }
+
+    #loginctl{
+        margin-left:100px;
+        font-size: 13pt;
+
+    }
+
+#pnlLogin{
+
+    margin:0 15%;
+
+}
+
+/*
+#loginbox >*
+{
+    marging\
+    }
+  */  

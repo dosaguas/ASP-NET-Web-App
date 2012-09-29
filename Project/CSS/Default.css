@@ -1,0 +1,19 @@
+﻿body {
+}
+
+
+
+#DefaultWrapper{
+background:#2E6E9E url(images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x;
+	margin:0 15%;
+	padding:20px;
+}
+
+
+
+#defaultContent{
+	line-height:30px;
+
+
+
+}

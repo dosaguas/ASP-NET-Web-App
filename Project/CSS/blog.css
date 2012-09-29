@@ -1,0 +1,111 @@
+.star{
+
+	background:#f00;
+
+}
+
+
+body {
+font:normal 13px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+letter-spacing:0;
+text-shadow:0 1px 0 rgba(255,255,255,.8);
+-webkit-font-smoothing: subpixel-antialiased;
+
+}
+
+#readMore{
+
+font-size:0.7em;
+margin-right:400px;
+padding:5px;
+}
+
+.tinyButton,#searchBarWrapper
+{
+font-size:0.6em !important;
+}
+
+#searchBarWrapper{
+text-align:right;
+margin-right:50px;
+}
+
+#searchBar{
+
+font-size:10pt !important;
+text-align:right;
+letter-spacing:0px;
+}
+
+#InsertBlogEntryWrapper {
+    margin: 20px ;
+    padding-left: 60px;
+    text-align: left;
+}
+#toggleInsertMode{
+
+	background:#fff;
+}
+
+#resizable{
+
+	margin:0px 5%;
+}
+
+
+#resizable span{
+
+	margin:0;
+	
+}
+
+.blogentry
+{
+margin:1.5px 50px;
+letter-spacing:3px;
+background:#ffe;
+font-family:Impact, Sans-Serif, Segoe UI, Serif;
+
+}
+
+
+
+#BlogMainWrapper {
+margin: 0 15%;
+padding: 35px;
+text-align: center;
+   background: url("images/ui-bg_diagonals-thick_26_2293f7_40x40.png") repeat scroll 50% 50% rgb(34, 147, 247); 
+
+}
+#BlogContentWrapper{
+background:#2E6E9E url(images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x;
+}
+.socMedia{
+border-right: 0.5px dotted #000000;
+float: left;
+height: 100px;
+//height:100%;
+
+margin-right: 20px;
+margin-top: 20px;
+padding: 20px;
+width: 100px;
+}
+
+.blogMedia{
+text-align:left !important;
+padding:20px;
+clear:none;
+
+}
+
+#myTinyEditor{
+margin: 0px 80px;
+}
+
+
+
+h3{
+text-align: left;
+font-family:Verdana,Segoe UI, Serif;
+}

@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" EnableTheming="true"  CodeFile="Main.master.cs" Inherits="Main" %>
+<%@ Register Src="~/UserControls/ucHeader.ascx" TagPrefix="uc" TagName="header" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="CSS/Master.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<div id="header">
+<!-- START OF THE PLAYER EMBEDDING TO COPY-PASTE -FLASH- -->
+     
+	
+   <div id="navbar">
+       <asp:Menu ID="mnNavBar" ClientIDMode="Static" runat="server" DataSourceID="SiteMapDefault" 
+           StaticDisplayLevels="2" Orientation="Horizontal" BackColor="#E3EAEB" 
+           DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+           ForeColor="#666666" StaticSubMenuIndent="10px">
+           <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+           <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+           <DynamicMenuStyle BackColor="#E3EAEB" />
+           <DynamicSelectedStyle BackColor="#1C5E55" />
+           <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+           <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+           <StaticSelectedStyle BackColor="#1C5E55" />
+       </asp:Menu>
+       <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+   <%-- 
+ 
+<asp:Menu ID="mnNavBar" runat="server" BackColor="#293955" 
+    DynamicHorizontalOffset="20" Font-Names="Tahoma" Font-Size="1em" 
+    ForeColor="#666666" StaticSubMenuIndent="10px" DynamicVerticalOffset="200" 
+         Font-Overline="True" ItemWrap="True" 
+         style="font-family: 'Segoe UI'" DataSourceID="SiteMapDefault" 
+         EnableTheming="True" DisappearAfter="200" 
+           ViewStateMode="Enabled" Height="35px" RenderingMode="List" Width="1000px">
+    <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+    <DynamicMenuStyle BackColor="#E3EAEB" />
+    <DynamicSelectedStyle BackColor="#1C5E55" />
+    
+    <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+    <StaticSelectedStyle BackColor="#1C5E55" />
+    <StaticItemTemplate>
+        <%# Eval("Text") %>
+    </StaticItemTemplate>
+</asp:Menu>
+
+--%>
+
+
+     <asp:SiteMapDataSource ID="SiteMapDefault" runat="server" 
+         SiteMapProvider="XmlSiteMapProvider" 
+         StartingNodeUrl="~/Public/Default.aspx" />
+     <asp:SiteMapDataSource ID="SiteMapAdmin" runat="server" 
+         SiteMapProvider="XmlSiteMapProviderAdmin" 
+         StartingNodeUrl="~/Admin/Default.aspx" />
+
+     <asp:SiteMapDataSource ID="SiteMapMember" runat="server" 
+        SiteMapProvider="XmlSiteMapProviderMember" 
+         StartingNodeUrl="~/Member/Default.aspx" />
+
+         <%-- 
+        <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDefault" 
+           ImageSet="Msdn" NodeIndent="10">
+            <HoverNodeStyle BackColor="#CCCCCC" BorderColor="#888888" BorderStyle="Solid" 
+                Font-Underline="True" />
+            <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                HorizontalPadding="5px" NodeSpacing="1px" VerticalPadding="2px" />
+            <ParentNodeStyle Font-Bold="False" />
+            <SelectedNodeStyle BackColor="White" BorderColor="#888888" BorderStyle="Solid" 
+                BorderWidth="1px" Font-Underline="False" HorizontalPadding="3px" 
+                VerticalPadding="1px" />
+        </asp:TreeView>
+        --%>
+
+    </div>
+ </div>    
+ 
+
+    <div id="masterframe">
+    <div id="lgstatWrapper">
+    <asp:LoginStatus ID="LoginStatus1" runat="server" />&nbsp;<asp:LoginName ID="LoginName1" runat="server" />
+        </div>
+        
+        <asp:SiteMapPath ID="breadCrumb" runat="server" Visible="true" Font-Names="Verdana" 
+            Font-Size="0.8em" PathSeparator=" :~> " SiteMapProvider="XmlSiteMapProvider" 
+            ViewStateMode="Enabled">
+            <CurrentNodeStyle ForeColor="#333333" />
+            <NodeStyle Font-Bold="True" ForeColor="#7C6F57" />
+            <PathSeparatorStyle Font-Bold="True" ForeColor="#5D7B9D" />
+            <RootNodeStyle Font-Bold="True" ForeColor="#5D7B9D" />
+        </asp:SiteMapPath>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    
+    </div>
+    
+ </form>
+
+</body>
+</html>
